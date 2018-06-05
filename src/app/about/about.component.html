@@ -1,0 +1,21 @@
+<p>
+  This is what i'm all about. <a href="#" (click)="sendMeHome()"><strong>Take me back</strong></a>
+</p>
+<!-- Some times we need to access code across multiple components, so instead of creating
+    or re-writing the same code in each component Service file can be used to share the 
+    data. 
+    So Service files are generally used for making http calls or for sharing data 
+    between componenets. 
+-->
+
+<!-- The data is shown in two different ways -->
+<ul>
+  <li *ngFor="let goal of goals">
+    {{ goal }}
+  </li>
+</ul>
+<div class="col">
+  <p class="life-container" *ngFor="let goal of goals">
+    {{ goal }}
+  </p>
+</div>
